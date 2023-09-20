@@ -43,6 +43,9 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Install Hugo CLI
+        run: |
+          pwd && ls themes
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
